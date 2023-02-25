@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap');
+
+@mixin dis($dis: flex, $jus: center, $align: center, $wrap: nowrap, $flex: row, $fontsize: 16px, $color: white) {
+    display: $dis;
+    justify-content: $jus;
+    align-items: $align;
+    flex-wrap: $wrap;
+    flex-direction: $flex ;
+    font-size: $fontsize ;
+    color: $color;
+}
+
+.border2 {
+    // height: 100vh;
+    // border: 2px solid blue;
+    background-color: black;
+    @include dis($flex: column);
+    font-family: 'Shantell Sans', cursive;
+
+    .border2top {
+        @include dis($flex: column);
+        width: 70%;
+        // height: 20%;
+        // border: 1px solid white;
+        margin: 25px;
+
+        @media(max-width:1000px) {
+            width: 90%;
+        }
+
+        h5 {
+            @include dis($fontsize: 1.8em);
+            padding: 20x;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20x;
+            @include dis($fontsize: 5.7em);
+
+            @media(max-width:970px) {
+                font-size: 4.8em;
+            }
+        }
+    }
+
+    .border2bottom {
+        width: 90%;
+        // height: 90%;
+        border: 1px solid white;
+        @include dis;
+        margin: 10px;
+
+        @media(max-width:840px) {
+            flex-direction: column;
+        }
+
+        .border2box1 {
+            margin: 10px;
+            width: 350px;
+            // height: 600px;
+            border-left: 1px solid white;
+            border-right: 1px solid white;
+            // border: 1px solid white;
+
+            @include dis($flex: column, $jus: space-around);
+
+            @media(max-width:840px) {
+                width: 90%;
+                height: 400px;
+            }
+
+            @media(max-width:1062px) {
+                font-size: 13px;
+            }
+
+            .border2div1 {
+                width: 90%;
+                height: 35%;
+                // border: 1px solid white;
+                @include dis;
+
+                .twobox1 {
+                    @include dis;
+                    width: 90px;
+                    height: 90px;
+                    border: 1.5px solid white;
+
+                    .twobox2 {
+                        width: 70px;
+                        transition: 0.7s;
+
+                        height: 70px;
+                        background-color: #5671DC;
+
+                        &:hover {
+                            width: 80px;
+                            height: 80px;
+                            transform: rotate(50deg);
+                        }
+                    }
+                }
+            }
+
+            .border2div2 {
+                @include dis($fontsize: 3.3em);
+                font-weight: 600;
+                padding: 15px;
+                margin: 10px;
+                text-align: center;
+            }
+
+            .border2div3 {
+                @include dis($fontsize: 1.8em, $color: #6d83db);
+                font-weight: 400;
+                padding: 15px;
+                margin: 10px;
+                text-align: center;
+            }
+
+
+        }
+    }
+}

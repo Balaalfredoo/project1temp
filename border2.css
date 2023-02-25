@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap");
+.border2 {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  font-size: 16px;
+  color: white;
+  font-family: "Shantell Sans", cursive;
+}
+.border2 .border2top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  font-size: 16px;
+  color: white;
+  width: 70%;
+  margin: 25px;
+}
+@media (max-width: 1000px) {
+  .border2 .border2top {
+    width: 90%;
+  }
+}
+.border2 .border2top h5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  font-size: 1.8em;
+  color: white;
+  padding: 20x;
+  text-align: center;
+}
+.border2 .border2top h1 {
+  text-align: center;
+  padding: 20x;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  font-size: 5.7em;
+  color: white;
+}
+@media (max-width: 970px) {
+  .border2 .border2top h1 {
+    font-size: 4.8em;
+  }
+}
+.border2 .border2bottom {
+  width: 90%;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  font-size: 16px;
+  color: white;
+  margin: 10px;
+}
+@media (max-width: 840px) {
+  .border2 .border2bottom {
+    flex-direction: column;
+  }
+}
+.border2 .border2bottom .border2box1 {
+  margin: 10px;
+  width: 350px;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  font-size: 16px;
+  color: white;
+}
+@media (max-width: 840px) {
+  .border2 .border2bottom .border2box1 {
+    width: 90%;
+    height: 400px;
+  }
+}
+@media (max-width: 1062px) {
+  .border2 .border2bottom .border2box1 {
+    font-size: 13px;
+  }
+}
+.border2 .border2bottom .border2box1 .border2div1 {
+  width: 90%;
+  height: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  font-size: 16px;
+  color: white;
+}
+.border2 .border2bottom .border2box1 .border2div1 .twobox1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  font-size: 16px;
+  color: white;
+  width: 90px;
+  height: 90px;
+  border: 1.5px solid white;
+}
+.border2 .border2bottom .border2box1 .border2div1 .twobox1 .twobox2 {
+  width: 70px;
+  transition: 0.7s;
+  height: 70px;
+  background-color: #5671DC;
+}
+.border2 .border2bottom .border2box1 .border2div1 .twobox1 .twobox2:hover {
+  width: 80px;
+  height: 80px;
+  transform: rotate(50deg);
+}
+.border2 .border2bottom .border2box1 .border2div2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  font-size: 3.3em;
+  color: white;
+  font-weight: 600;
+  padding: 15px;
+  margin: 10px;
+  text-align: center;
+}
+.border2 .border2bottom .border2box1 .border2div3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  font-size: 1.8em;
+  color: #6d83db;
+  font-weight: 400;
+  padding: 15px;
+  margin: 10px;
+  text-align: center;
+}/*# sourceMappingURL=border2.css.map */
