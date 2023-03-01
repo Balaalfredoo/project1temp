@@ -256,8 +256,326 @@
 }
 
 .border4 {
-    height: 100vh;
+    // height: 100vh;
     border: 2px solid black;
+    @include dis;
+    background-color: #101010;
 
+    .border4box {
+        @include dis($wrap: wrap, $jus: space-evenly);
+        margin: 15px;
+        // border: 1px solid blue;
+
+
+        .picbox {
+            transition: 0.9s;
+            position: relative;
+            overflow: hidden;
+
+            .picboxx {
+                position: absolute;
+                width: 100%;
+                transition: 0.7s;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.431);
+                @include dis($fontsize: 1.5em);
+                font-weight: 550;
+                transform: translateY(500px);
+            }
+
+            &:hover {
+                transform: scale(1.2);
+
+                .picboxx {
+                    transform: translateY(0px);
+                }
+            }
+
+            @media(max-width:963px) {
+                width: 800px;
+            }
+
+        }
+
+        .pic1 {
+            margin: 15px;
+            width: 800px;
+            height: 400px;
+            // border: 1px solid blue;
+            background-image: url('./src/img_9.jpg.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        .pic2 {
+            margin: 15px;
+            width: 500px;
+            height: 400px;
+            // border: 1px solid blue;
+            background-image: url('./src/img_1.jpg.webp');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+            @media(max-width:963px) {
+                width: 80%;
+                background-position: center;
+                height: 500px;
+            }
+        }
+
+        .pic3 {
+            margin: 15px;
+            width: 350px;
+            height: 300px;
+            // border: 1px solid blue;
+            background-image: url('./src/img_3.jpg.webp');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+            @media(max-width:963px) {
+                width: 80%;
+                background-position: center;
+                height: 500px;
+            }
+        }
+
+        .pic4 {
+            margin: 15px;
+            width: 600px;
+            height: 300px;
+            // border: 1px solid blue;
+            background-image: url('./src/img_8.jpg.webp');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+
+            @media(max-width:963px) {
+                width: 80%;
+                background-position: center;
+                height: 500px;
+            }
+        }
+
+        .pic5 {
+            margin: 15px;
+            width: 350px;
+            height: 300px;
+            // border: 1px solid blue;
+            background-image: url('./src/mbr-2.jpeg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+
+            @media(max-width:963px) {
+                width: 80%;
+                background-position: center;
+                height: 500px;
+            }
+        }
+
+        .pic6 {
+            margin: 15px;
+            width: 300px;
+            height: 300px;
+            // border: 1px solid blue;
+            background-image: url('./src/img_7.jpg.webp');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+
+            @media(max-width:963px) {
+                width: 80%;
+                background-position: center;
+                height: 500px;
+            }
+        }
+
+        .pic7 {
+            margin: 15px;
+            width: 300px;
+            height: 300px;
+            // border: 1px solid blue;
+            background-image: url('./src/img_5.jpg.webp');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+
+            @media(max-width:963px) {
+                width: 80%;
+                background-position: center;
+                height: 500px;
+            }
+        }
+
+        .pic8 {
+            margin: 15px;
+            width: 350px;
+            height: 300px;
+            // border: 1px solid blue;
+            background-image: url('./src/img_4.jpg.webp');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+
+            @media(max-width:963px) {
+                width: 80%;
+                background-position: center;
+                height: 500px;
+            }
+        }
+
+        .pic9 {
+            margin: 15px;
+            width: 350px;
+            height: 300px;
+            // border: 1px solid blue;
+            background-image: url('./src/pexels.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+
+            @media(max-width:963px) {
+                width: 80%;
+                background-position: center;
+                height: 500px;
+            }
+        }
+
+        .pic10 {
+            margin: 15px;
+            width: 350px;
+            height: 300px;
+            // border: 1px solid blue;
+            background-image: url('./src/img_8.jpg.webp');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+
+            @media(max-width:963px) {
+                width: 80%;
+                background-position: center;
+                height: 500px;
+            }
+        }
+
+        .pic11 {
+            margin: 15px;
+            width: 350px;
+            height: 300px;
+            // border: 1px solid blue;
+            background-image: url('./src/img_3.jpg.webp');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+
+            @media(max-width:963px) {
+                width: 80%;
+                background-position: center;
+                height: 500px;
+            }
+        }
+
+        .pic12 {
+            margin: 15px;
+            width: 500px;
+            height: 300px;
+            // border: 1px solid blue;
+            background-image: url('./src/img_6.jpg.webp');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+
+            @media(max-width:963px) {
+                width: 80%;
+                background-position: center;
+                height: 500px;
+            }
+        }
+
+        .pic13 {
+            margin: 15px;
+            width: 650px;
+            height: 300px;
+            // border: 1px solid blue;
+            background-image: url('./src/pexels-arshad-sutar-1749303.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+
+            @media(max-width:963px) {
+                width: 80%;
+                background-position: center;
+                height: 500px;
+            }
+        }
+
+        .pic14 {
+            margin: 15px;
+            width: 550px;
+            height: 300px;
+            // border: 1px solid blue;
+            background-image: url('./src/img_4.jpg.webp');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+
+            @media(max-width:963px) {
+                width: 80%;
+                background-position: center;
+                height: 500px;
+            }
+        }
+
+        .pic15 {
+            margin: 15px;
+            width: 550px;
+            height: 300px;
+            // border: 1px solid blue;
+            background-image: url('./src/mbr1.jpeg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+
+            @media(max-width:963px) {
+                width: 80%;
+                background-position: center;
+                height: 500px;
+            }
+        }
+
+        .pic16 {
+            margin: 15px;
+            width: 550px;
+            height: 300px;
+            // border: 1px solid blue;
+            background-image: url('./src/pexels-arshad-sutar-1749303.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+
+            @media(max-width:963px) {
+                width: 80%;
+                background-position: center;
+                height: 500px;
+            }
+        }
+    }
 
 }

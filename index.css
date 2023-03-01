@@ -313,6 +313,304 @@
 }
 
 .border4 {
-  height: 100vh;
   border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  font-size: 16px;
+  color: white;
+  background-color: #101010;
+}
+.border4 .border4box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  font-size: 16px;
+  color: white;
+  margin: 15px;
+}
+.border4 .border4box .picbox {
+  transition: 0.9s;
+  position: relative;
+  overflow: hidden;
+}
+.border4 .border4box .picbox .picboxx {
+  position: absolute;
+  width: 100%;
+  transition: 0.7s;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.431);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  font-size: 1.5em;
+  color: white;
+  font-weight: 550;
+  transform: translateY(500px);
+}
+.border4 .border4box .picbox:hover {
+  transform: scale(1.2);
+}
+.border4 .border4box .picbox:hover .picboxx {
+  transform: translateY(0px);
+}
+@media (max-width: 963px) {
+  .border4 .border4box .picbox {
+    width: 800px;
+  }
+}
+.border4 .border4box .pic1 {
+  margin: 15px;
+  width: 800px;
+  height: 400px;
+  background-image: url("./src/img_9.jpg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.border4 .border4box .pic2 {
+  margin: 15px;
+  width: 500px;
+  height: 400px;
+  background-image: url("./src/img_1.jpg.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 963px) {
+  .border4 .border4box .pic2 {
+    width: 80%;
+    background-position: center;
+    height: 500px;
+  }
+}
+.border4 .border4box .pic3 {
+  margin: 15px;
+  width: 350px;
+  height: 300px;
+  background-image: url("./src/img_3.jpg.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 963px) {
+  .border4 .border4box .pic3 {
+    width: 80%;
+    background-position: center;
+    height: 500px;
+  }
+}
+.border4 .border4box .pic4 {
+  margin: 15px;
+  width: 600px;
+  height: 300px;
+  background-image: url("./src/img_8.jpg.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 963px) {
+  .border4 .border4box .pic4 {
+    width: 80%;
+    background-position: center;
+    height: 500px;
+  }
+}
+.border4 .border4box .pic5 {
+  margin: 15px;
+  width: 350px;
+  height: 300px;
+  background-image: url("./src/mbr-2.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 963px) {
+  .border4 .border4box .pic5 {
+    width: 80%;
+    background-position: center;
+    height: 500px;
+  }
+}
+.border4 .border4box .pic6 {
+  margin: 15px;
+  width: 300px;
+  height: 300px;
+  background-image: url("./src/img_7.jpg.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 963px) {
+  .border4 .border4box .pic6 {
+    width: 80%;
+    background-position: center;
+    height: 500px;
+  }
+}
+.border4 .border4box .pic7 {
+  margin: 15px;
+  width: 300px;
+  height: 300px;
+  background-image: url("./src/img_5.jpg.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 963px) {
+  .border4 .border4box .pic7 {
+    width: 80%;
+    background-position: center;
+    height: 500px;
+  }
+}
+.border4 .border4box .pic8 {
+  margin: 15px;
+  width: 350px;
+  height: 300px;
+  background-image: url("./src/img_4.jpg.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 963px) {
+  .border4 .border4box .pic8 {
+    width: 80%;
+    background-position: center;
+    height: 500px;
+  }
+}
+.border4 .border4box .pic9 {
+  margin: 15px;
+  width: 350px;
+  height: 300px;
+  background-image: url("./src/pexels.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 963px) {
+  .border4 .border4box .pic9 {
+    width: 80%;
+    background-position: center;
+    height: 500px;
+  }
+}
+.border4 .border4box .pic10 {
+  margin: 15px;
+  width: 350px;
+  height: 300px;
+  background-image: url("./src/img_8.jpg.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 963px) {
+  .border4 .border4box .pic10 {
+    width: 80%;
+    background-position: center;
+    height: 500px;
+  }
+}
+.border4 .border4box .pic11 {
+  margin: 15px;
+  width: 350px;
+  height: 300px;
+  background-image: url("./src/img_3.jpg.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 963px) {
+  .border4 .border4box .pic11 {
+    width: 80%;
+    background-position: center;
+    height: 500px;
+  }
+}
+.border4 .border4box .pic12 {
+  margin: 15px;
+  width: 500px;
+  height: 300px;
+  background-image: url("./src/img_6.jpg.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 963px) {
+  .border4 .border4box .pic12 {
+    width: 80%;
+    background-position: center;
+    height: 500px;
+  }
+}
+.border4 .border4box .pic13 {
+  margin: 15px;
+  width: 650px;
+  height: 300px;
+  background-image: url("./src/pexels-arshad-sutar-1749303.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 963px) {
+  .border4 .border4box .pic13 {
+    width: 80%;
+    background-position: center;
+    height: 500px;
+  }
+}
+.border4 .border4box .pic14 {
+  margin: 15px;
+  width: 550px;
+  height: 300px;
+  background-image: url("./src/img_4.jpg.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 963px) {
+  .border4 .border4box .pic14 {
+    width: 80%;
+    background-position: center;
+    height: 500px;
+  }
+}
+.border4 .border4box .pic15 {
+  margin: 15px;
+  width: 550px;
+  height: 300px;
+  background-image: url("./src/mbr1.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 963px) {
+  .border4 .border4box .pic15 {
+    width: 80%;
+    background-position: center;
+    height: 500px;
+  }
+}
+.border4 .border4box .pic16 {
+  margin: 15px;
+  width: 550px;
+  height: 300px;
+  background-image: url("./src/pexels-arshad-sutar-1749303.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 963px) {
+  .border4 .border4box .pic16 {
+    width: 80%;
+    background-position: center;
+    height: 500px;
+  }
 }/*# sourceMappingURL=index.css.map */
