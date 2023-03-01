@@ -44,11 +44,14 @@
             font-weight: 550;
 
             padding: 10px;
-            border: 1px solid black;
+            // border: 1px solid black;
             transition: 0.5s;
             cursor: pointer;
 
 
+            &:hover {
+                color: gold;
+            }
 
 
         }
@@ -291,7 +294,7 @@
                 }
             }
 
-            @media(max-width:963px) {
+            @media(max-width:1023px) {
                 width: 800px;
             }
 
@@ -319,7 +322,7 @@
             background-position: center;
             background-size: cover;
 
-            @media(max-width:963px) {
+            @media(max-width:1023px) {
                 width: 80%;
                 background-position: center;
                 height: 500px;
@@ -336,7 +339,7 @@
             background-position: center;
             background-size: cover;
 
-            @media(max-width:963px) {
+            @media(max-width:1023px) {
                 width: 80%;
                 background-position: center;
                 height: 500px;
@@ -354,7 +357,7 @@
             background-size: cover;
 
 
-            @media(max-width:963px) {
+            @media(max-width:1023px) {
                 width: 80%;
                 background-position: center;
                 height: 500px;
@@ -372,7 +375,7 @@
             background-size: cover;
 
 
-            @media(max-width:963px) {
+            @media(max-width:1023px) {
                 width: 80%;
                 background-position: center;
                 height: 500px;
@@ -390,7 +393,7 @@
             background-size: cover;
 
 
-            @media(max-width:963px) {
+            @media(max-width:1023px) {
                 width: 80%;
                 background-position: center;
                 height: 500px;
@@ -408,7 +411,7 @@
             background-size: cover;
 
 
-            @media(max-width:963px) {
+            @media(max-width:1023px) {
                 width: 80%;
                 background-position: center;
                 height: 500px;
@@ -426,7 +429,7 @@
             background-size: cover;
 
 
-            @media(max-width:963px) {
+            @media(max-width:1023px) {
                 width: 80%;
                 background-position: center;
                 height: 500px;
@@ -444,7 +447,7 @@
             background-size: cover;
 
 
-            @media(max-width:963px) {
+            @media(max-width:1023px) {
                 width: 80%;
                 background-position: center;
                 height: 500px;
@@ -462,7 +465,7 @@
             background-size: cover;
 
 
-            @media(max-width:963px) {
+            @media(max-width:1023px) {
                 width: 80%;
                 background-position: center;
                 height: 500px;
@@ -480,7 +483,7 @@
             background-size: cover;
 
 
-            @media(max-width:963px) {
+            @media(max-width:1023px) {
                 width: 80%;
                 background-position: center;
                 height: 500px;
@@ -498,7 +501,7 @@
             background-size: cover;
 
 
-            @media(max-width:963px) {
+            @media(max-width:1023px) {
                 width: 80%;
                 background-position: center;
                 height: 500px;
@@ -516,7 +519,7 @@
             background-size: cover;
 
 
-            @media(max-width:963px) {
+            @media(max-width:1023px) {
                 width: 80%;
                 background-position: center;
                 height: 500px;
@@ -534,7 +537,7 @@
             background-size: cover;
 
 
-            @media(max-width:963px) {
+            @media(max-width:1023px) {
                 width: 80%;
                 background-position: center;
                 height: 500px;
@@ -552,7 +555,7 @@
             background-size: cover;
 
 
-            @media(max-width:963px) {
+            @media(max-width:1023px) {
                 width: 80%;
                 background-position: center;
                 height: 500px;
@@ -570,7 +573,7 @@
             background-size: cover;
 
 
-            @media(max-width:963px) {
+            @media(max-width:1023px) {
                 width: 80%;
                 background-position: center;
                 height: 500px;
