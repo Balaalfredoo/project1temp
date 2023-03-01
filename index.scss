@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&display=swap');
 @import './border2.css';
+@import './border3.css';
 
 * {
     box-sizing: border-box;
@@ -16,11 +17,49 @@
     color: $color;
 }
 
+.navbar {
+    margin-left: 70px;
+    width: 90vw;
+    background-color: #101010;
+    height: 70px;
+    position: fixed;
+    z-index: 5;
+    // border: 1px solid white;
+    @include dis($jus: space-between);
+
+    .motion {
+        margin-left: 15px;
+        @include dis($fontsize: 1.8em);
+    }
+
+    .bar {
+        width: 75%;
+        height: 95%;
+        // border: 1px solid white;
+        margin-left: 15px;
+        @include dis($fontsize: 1.8em, $jus: space-around);
+
+        .dd1 {
+            @include dis($fontsize: 0.7em);
+            font-weight: 550;
+
+            padding: 10px;
+            border: 1px solid black;
+            transition: 0.5s;
+            cursor: pointer;
+
+
+
+
+        }
+    }
+}
+
 .border {
     height: 100vh;
     // border: 1px solid black;
     @include dis;
-    background-image: url('./src/pexels-隔壁光头老王-wangming\'photo-354939.jpg');
+    background-image: url('./src/pexels.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -62,7 +101,12 @@
                 text-transform: capitalize;
                 font-weight: 900;
                 text-shadow: 2px 1px 1px rgb(26, 25, 25), 4px 1px 1px rgb(20, 19, 19);
+
+                &::before {
+                    content: '';
+                }
             }
+
         }
 
         .lorem {
@@ -106,6 +150,26 @@
     @include dis;
     // height: 100vh;
     background-color: #070606;
+    position: relative;
+
+    .selectcircle {
+        position: absolute;
+        width: 8px;
+        transform: translate(-50%, -50%);
+        height: 8px;
+        border-radius: 50%;
+        transition: 0.8s;
+        animation: up infinite linear;
+        animation-duration: 1.8s;
+        // background-color: #5671DC;
+    }
+
+    @keyframes up {
+        100% {
+            transform: translateY(-100px);
+        }
+
+    }
 
     .box2 {
         margin: 30px;
@@ -189,4 +253,11 @@
             box-shadow: 30px 30px 1px 1px #4061e4;
         }
     }
+}
+
+.border4 {
+    height: 100vh;
+    border: 2px solid black;
+
+
 }

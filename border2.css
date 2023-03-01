@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap");
 .border2 {
-  background-color: black;
+  background-image: url("./src/4k-minimalist-anonymous-mask-2dpumtq7d6vnq2fv.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,7 +12,23 @@
   flex-direction: column;
   font-size: 16px;
   color: white;
+  position: relative;
   font-family: "Shantell Sans", cursive;
+}
+.border2 .selectcircle {
+  position: absolute;
+  width: 8px;
+  transform: translate(-50%, -50%);
+  height: 8px;
+  border-radius: 50%;
+  transition: 0.8s;
+  animation: up infinite linear;
+  animation-duration: 1.8s;
+}
+@keyframes up {
+  100% {
+    transform: translateY(-100px);
+  }
 }
 .border2 .border2top {
   display: flex;
@@ -55,7 +75,6 @@
 }
 .border2 .border2bottom {
   width: 90%;
-  border: 1px solid white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,6 +92,7 @@
 .border2 .border2bottom .border2box1 {
   margin: 10px;
   width: 350px;
+  transition: 0.8s;
   border-left: 1px solid white;
   border-right: 1px solid white;
   display: flex;
@@ -82,6 +102,20 @@
   flex-direction: column;
   font-size: 16px;
   color: white;
+}
+.border2 .border2bottom .border2box1:hover .border2div1 {
+  transform: scale(1.1);
+}
+.border2 .border2bottom .border2box1:hover .border2div1 .twobox1 .twobox2 {
+  width: 80px;
+  height: 80px;
+  animation: rot infinite linear;
+  animation-duration: 0.8s;
+}
+@keyframes rot {
+  100% {
+    transform: rotate(360deg);
+  }
 }
 @media (max-width: 840px) {
   .border2 .border2bottom .border2box1 {
@@ -122,11 +156,6 @@
   transition: 0.7s;
   height: 70px;
   background-color: #5671DC;
-}
-.border2 .border2bottom .border2box1 .border2div1 .twobox1 .twobox2:hover {
-  width: 80px;
-  height: 80px;
-  transform: rotate(50deg);
 }
 .border2 .border2bottom .border2box1 .border2div2 {
   display: flex;

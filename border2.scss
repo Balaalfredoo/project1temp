@@ -13,9 +13,33 @@
 .border2 {
     // height: 100vh;
     // border: 2px solid blue;
-    background-color: black;
+    background-image: url('./src/4k-minimalist-anonymous-mask-2dpumtq7d6vnq2fv.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     @include dis($flex: column);
+    position: relative;
     font-family: 'Shantell Sans', cursive;
+
+    .selectcircle {
+        position: absolute;
+        width: 8px;
+        transform: translate(-50%, -50%);
+        height: 8px;
+        border-radius: 50%;
+        transition: 0.8s;
+        animation: up infinite linear;
+        animation-duration: 1.8s;
+        // background-color: #5671DC;
+    }
+
+    @keyframes up {
+        100% {
+            transform: translateY(-100px);
+        }
+
+    }
 
     .border2top {
         @include dis($flex: column);
@@ -48,7 +72,7 @@
     .border2bottom {
         width: 90%;
         // height: 90%;
-        border: 1px solid white;
+        // border: 1px solid white;
         @include dis;
         margin: 10px;
 
@@ -59,12 +83,36 @@
         .border2box1 {
             margin: 10px;
             width: 350px;
+            transition: 0.8s;
             // height: 600px;
             border-left: 1px solid white;
             border-right: 1px solid white;
             // border: 1px solid white;
 
             @include dis($flex: column, $jus: space-around);
+
+            &:hover {
+
+                .border2div1 {
+                    transform: scale(1.1);
+
+                    .twobox1 {
+                        .twobox2 {
+                            width: 80px;
+                            height: 80px;
+
+                            animation: rot infinite linear;
+                            animation-duration: 0.8s;
+                        }
+
+                        @keyframes rot {
+                            100% {
+                                transform: rotate(360deg);
+                            }
+                        }
+                    }
+                }
+            }
 
             @media(max-width:840px) {
                 width: 90%;
@@ -81,6 +129,8 @@
                 // border: 1px solid white;
                 @include dis;
 
+
+
                 .twobox1 {
                     @include dis;
                     width: 90px;
@@ -94,11 +144,11 @@
                         height: 70px;
                         background-color: #5671DC;
 
-                        &:hover {
-                            width: 80px;
-                            height: 80px;
-                            transform: rotate(50deg);
-                        }
+                        // &:hover {
+                        //     width: 80px;
+                        //     height: 80px;
+                        //     transform: rotate(50deg);
+                        // }
                     }
                 }
             }

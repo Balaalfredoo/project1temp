@@ -1,9 +1,61 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&display=swap");
 @import './border2.css';
+@import './border3.css';
 * {
   box-sizing: border-box;
   margin: 0px;
+}
+
+.navbar {
+  margin-left: 70px;
+  width: 90vw;
+  background-color: #101010;
+  height: 70px;
+  position: fixed;
+  z-index: 5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  font-size: 16px;
+  color: white;
+}
+.navbar .motion {
+  margin-left: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  font-size: 1.8em;
+  color: white;
+}
+.navbar .bar {
+  width: 75%;
+  height: 95%;
+  margin-left: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  font-size: 1.8em;
+  color: white;
+}
+.navbar .bar .dd1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  font-size: 0.7em;
+  color: white;
+  font-weight: 550;
+  padding: 10px;
+  border: 1px solid black;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 .border {
@@ -15,7 +67,7 @@
   flex-direction: row;
   font-size: 16px;
   color: white;
-  background-image: url("./src/pexels-隔壁光头老王-wangming'photo-354939.jpg");
+  background-image: url("./src/pexels.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -78,6 +130,9 @@
   font-weight: 900;
   text-shadow: 2px 1px 1px rgb(26, 25, 25), 4px 1px 1px rgb(20, 19, 19);
 }
+.border .box1 .markiting h2::before {
+  content: "";
+}
 .border .box1 .lorem {
   width: 95%;
   height: 20%;
@@ -129,6 +184,22 @@
   font-size: 16px;
   color: white;
   background-color: #070606;
+  position: relative;
+}
+.border1 .selectcircle {
+  position: absolute;
+  width: 8px;
+  transform: translate(-50%, -50%);
+  height: 8px;
+  border-radius: 50%;
+  transition: 0.8s;
+  animation: up infinite linear;
+  animation-duration: 1.8s;
+}
+@keyframes up {
+  100% {
+    transform: translateY(-100px);
+  }
 }
 .border1 .box2 {
   margin: 30px;
@@ -239,4 +310,9 @@
 }
 .border1 .box2 .b1:nth-child(6) {
   box-shadow: 30px 30px 1px 1px #4061e4;
+}
+
+.border4 {
+  height: 100vh;
+  border: 2px solid black;
 }/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
+@mixin dis($dis: flex, $jus: center, $align: center, $wrap: nowrap, $flex: row, $fontsize: 16px, $color: white) {
+    display: $dis;
+    justify-content: $jus;
+    align-items: $align;
+    flex-wrap: $wrap;
+    flex-direction: $flex ;
+    font-size: $fontsize ;
+    color: $color;
+}
+
+.border3 {
+    // height: 100vh;
+    @include dis;
+    // border: 1px solid blue;
+    background-image: url('./src/4k-minimalist-anonymous-mask-2dpumtq7d6vnq2fv.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Aclonica', sans-serif;
+
+    .border3box1 {
+        margin: 15px;
+        width: 90%;
+        // height: 85%;
+        // border: 1px solid blue;
+        @include dis($jus: space-around, $wrap: wrap);
+
+
+
+        .border3box1boxx {
+            margin: 15px;
+            width: 300px;
+            // height: 90%;
+            border-left: 1px dashed white;
+            border-right: 1px dashed white;
+            @include dis;
+
+            @media(max-width:1120px) {
+                width: 45%;
+            }
+
+            @media(max-width:840px) {
+                width: 85%;
+            }
+
+            .boxx {
+                width: 95%;
+                height: 95%;
+                gap: 15px;
+                // position: relative;
+                @include dis($jus: space-around, $flex: column);
+
+                &:hover {
+                    .img1 {
+                        transform: translateY(-30px);
+                    }
+                }
+
+
+                .img1 {
+                    margin: 8px;
+                    // position: absolute;
+                    width: 90%;
+                    height: 50%;
+                    // border: 1px solid red;
+                    object-fit: cover;
+                    transition: 0.7s;
+
+
+                }
+
+                .effective {
+                    margin: 8px;
+                    width: 90%;
+                    @include dis($fontsize: 2.5em);
+                    font-weight: 700;
+
+                }
+
+                .lorem2 {
+                    margin: 8px;
+                    width: 90%;
+                    @include dis($fontsize: 1.2em);
+
+
+                }
+            }
+        }
+    }
+}
