@@ -291,7 +291,7 @@
 
 .border4 {
     // height: 100vh;
-    border: 2px solid black;
+    // border: 2px solid black;
     @include dis;
     background-color: #101010;
 
@@ -617,4 +617,85 @@
         }
     }
 
+}
+
+.border5 {
+    height: 100vh;
+    // border: 1px solid blue;
+    @include dis($flex: column);
+    gap: 10px;
+    background-color: #101010;
+
+    .border5top {
+        @include dis($fontsize: 2.6em);
+        width: 80%;
+        // font-weight: bolder;
+        // font-family: 'Josefin Sans', sans-serif;
+        height: 15%;
+
+        // border: 1px solid blue;
+
+        .span1 {
+            font-weight: 600;
+        }
+    }
+
+    .border5bottom {
+        @include dis;
+        width: 80%;
+        height: 80%;
+        // border: 1px solid blue;
+
+        .border5box {
+            width: 85%;
+            height: 90%;
+            // border: 1px solid blue;
+            // background-image: linear-gradient(rgb(88, 88, 240), rgb(88, 112, 228), rgb(44, 102, 220));
+            background-image: url('./src/pexels-peter-fazekas-1170604.jpg');
+            background-position: center;
+            background-size: cover;
+            border-bottom-left-radius: 15%;
+            @include dis($flex: column, $jus: space-around);
+
+
+            @media(max-width:1023px) {
+                width: 95%;
+            }
+
+            .div1 {
+                width: 80%;
+                height: 15%;
+                // border: 1px solid black;
+                @include dis;
+
+                .inp1 {
+                    width: 75%;
+                    height: 90%;
+                    background-color: rgba(0, 0, 0, 0.487);
+                    border: none;
+                    outline: none;
+                    border-radius: 10px;
+                    color: white;
+
+
+                    @media(max-width:1023px) {
+                        width: 90%;
+                    }
+
+                    &::placeholder {
+                        color: white;
+
+                    }
+
+                    &:focus {
+                        background-color: rgba(0, 0, 0, 0.816);
+                    }
+                }
+            }
+
+            .div1:nth-child(4) {
+                height: 35%;
+            }
+        }
+    }
 }
