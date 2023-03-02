@@ -13,11 +13,12 @@
 .border2 {
     // height: 100vh;
     // border: 2px solid blue;
-    background-image: url('./src/pexels-arshad-sutar-1749303.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background-color: black;
+    // background-image: url('./src/pexels-arshad-sutar-1749303.jpg');
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center;
+    // background-attachment: fixed;
     @include dis($flex: column);
     position: relative;
     font-family: 'Shantell Sans', cursive;
@@ -35,8 +36,34 @@
     }
 
     @keyframes up {
-        100% {
+        0% {
+            width: 8px;
+            height: 8px;
+            transform: translateY(-10px);
+        }
+
+        25% {
+            width: 15px;
+            height: 15px;
+            transform: translateY(-40px);
+        }
+
+        50% {
+            width: 25px;
+            height: 25px;
+            transform: translateY(-60px);
+        }
+
+        75% {
+            width: 30px;
+            height: 30px;
             transform: translateY(-100px);
+        }
+
+        100% {
+            width: 30px;
+            height: 30px;
+            transform: translateY(-150px);
         }
 
     }

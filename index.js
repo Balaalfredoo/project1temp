@@ -3,7 +3,7 @@ const border2 = document.querySelector('.border2');
 const border1 = document.querySelector('.border1');
 
 
-border2.addEventListener('click', (e) => {
+border2.addEventListener('mouseover', (e) => {
     const bound = border2.getBoundingClientRect();
     const top = bound.top;
     const left = bound.left;
@@ -23,11 +23,11 @@ border2.addEventListener('click', (e) => {
 
     setTimeout(() => {
         border2.removeChild(newelement);
-    }, 3000)
+    }, 4000)
 })
 
 
-border1.addEventListener('click', (e) => {
+border1.addEventListener('mouseover', (e) => {
     const bound = border1.getBoundingClientRect();
     const top = bound.top;
     const left = bound.left;

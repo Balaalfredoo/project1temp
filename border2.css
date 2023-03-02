@@ -1,10 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap");
 .border2 {
-  background-image: url("./src/pexels-arshad-sutar-1749303.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,8 +22,30 @@
   animation-duration: 1.8s;
 }
 @keyframes up {
-  100% {
+  0% {
+    width: 8px;
+    height: 8px;
+    transform: translateY(-10px);
+  }
+  25% {
+    width: 15px;
+    height: 15px;
+    transform: translateY(-40px);
+  }
+  50% {
+    width: 25px;
+    height: 25px;
+    transform: translateY(-60px);
+  }
+  75% {
+    width: 30px;
+    height: 30px;
     transform: translateY(-100px);
+  }
+  100% {
+    width: 30px;
+    height: 30px;
+    transform: translateY(-150px);
   }
 }
 .border2 .border2top {

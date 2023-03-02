@@ -7,11 +7,7 @@
   flex-direction: row;
   font-size: 16px;
   color: white;
-  background-image: url("./src/pexels-arshad-sutar-1749303.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background-color: black;
   font-family: "Aclonica", sans-serif;
 }
 .border3 .border3box1 {

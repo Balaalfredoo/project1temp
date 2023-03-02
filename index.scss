@@ -168,13 +168,39 @@
         border-radius: 50%;
         transition: 0.8s;
         animation: up infinite linear;
-        animation-duration: 1.8s;
+        animation-duration: 3.1s;
         // background-color: #5671DC;
     }
 
     @keyframes up {
-        100% {
+        0% {
+            width: 8px;
+            height: 8px;
+            transform: translateY(-10px);
+        }
+
+        25% {
+            width: 20px;
+            height: 20px;
+            transform: translateY(-60px);
+        }
+
+        50% {
+            width: 25px;
+            height: 25px;
             transform: translateY(-100px);
+        }
+
+        75% {
+            width: 30px;
+            height: 30px;
+            transform: translateY(-150px);
+        }
+
+        100% {
+            width: 35px;
+            height: 35px;
+            transform: translateY(-200px);
         }
 
     }
@@ -289,6 +315,11 @@
                 @include dis($fontsize: 1.5em);
                 font-weight: 550;
                 transform: translateY(500px);
+
+                .para {
+                    color: white;
+                    font-size: 3em;
+                }
             }
 
             &:hover {
