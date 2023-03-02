@@ -16,10 +16,11 @@
   width: 8px;
   transform: translate(-50%, -50%);
   height: 8px;
-  border-radius: 50%;
   transition: 0.8s;
   animation: up infinite linear;
   animation-duration: 1.8s;
+  -webkit-clip-path: path("M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z");
+          clip-path: path("M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z");
 }
 @keyframes up {
   0% {
@@ -122,7 +123,7 @@
   color: white;
 }
 .border2 .border2bottom .border2box1:hover .border2div1 {
-  transform: scale(1.1);
+  transform: scale(1.5);
 }
 .border2 .border2bottom .border2box1:hover .border2div1 .twobox1 .twobox2 {
   width: 80px;
