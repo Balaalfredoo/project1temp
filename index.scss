@@ -53,6 +53,11 @@
                 color: gold;
             }
 
+            @media (max-width:996px) {
+                display: none;
+
+            }
+
 
         }
     }
@@ -206,13 +211,13 @@
 
             }
 
-            @media(max-width:1187px) {
-                width: 400px;
+            @media(max-width:1023px) {
+                width: 85%;
             }
 
-            @media(max-width:952px) {
-                width: 650px;
-            }
+            // @media(max-width:952px) {
+            //     width: 650px;
+            // }
 
 
             .b1div1 {

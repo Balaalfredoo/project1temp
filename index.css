@@ -59,6 +59,11 @@
 .navbar .bar .dd1:hover {
   color: gold;
 }
+@media (max-width: 996px) {
+  .navbar .bar .dd1 {
+    display: none;
+  }
+}
 
 .border {
   height: 100vh;
@@ -240,14 +245,9 @@
 .border1 .box2 .b1:hover {
   transform: scale(1.1);
 }
-@media (max-width: 1187px) {
+@media (max-width: 1023px) {
   .border1 .box2 .b1 {
-    width: 400px;
-  }
-}
-@media (max-width: 952px) {
-  .border1 .box2 .b1 {
-    width: 650px;
+    width: 85%;
   }
 }
 .border1 .box2 .b1 .b1div1 {
