@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&display=swap");
 @import './border2.css';
 @import './border3.css';
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Merienda:wght@800&display=swap");
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -12,6 +13,7 @@
   background-color: #101010;
   height: 70px;
   position: fixed;
+  top: -15px;
   z-index: 5;
   display: flex;
   justify-content: space-between;
@@ -94,7 +96,7 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Merienda", cursive;
 }
 .border .box1 {
   width: 70%;
@@ -131,7 +133,7 @@
   align-items: center;
   flex-wrap: nowrap;
   flex-direction: column;
-  font-size: 4.5em;
+  font-size: 4.2em;
   color: white;
 }
 @media (max-width: 640px) {
@@ -150,10 +152,27 @@
   color: #5671DC;
   text-transform: capitalize;
   font-weight: 900;
-  text-shadow: 2px 1px 1px rgb(26, 25, 25), 4px 1px 1px rgb(20, 19, 19);
+  text-shadow: 4px 1px 1px rgb(26, 25, 25), 6px 1px 1px rgb(20, 19, 19);
+  animation: colors infinite linear;
+  animation-duration: 5s;
+  transition: 1.5s;
 }
-.border .box1 .markiting h2::before {
-  content: "";
+@keyframes colors {
+  0% {
+    color: #2e57fa;
+  }
+  25% {
+    color: orchid;
+  }
+  50% {
+    color: orangered;
+  }
+  75% {
+    color: gold;
+  }
+  100% {
+    color: plum;
+  }
 }
 .border .box1 .lorem {
   width: 95%;
@@ -258,7 +277,7 @@
   flex-direction: row;
   font-size: 16px;
   color: white;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Merienda", cursive;
   position: relative;
 }
 @media (max-width: 1187px) {
@@ -860,6 +879,7 @@
   height: 100vh;
   background-color: #101010;
   position: relative;
+  font-family: "Merienda", cursive;
 }
 .border6 .selectcircle {
   position: absolute;
@@ -908,10 +928,29 @@
   align-items: center;
   flex-wrap: nowrap;
   flex-direction: column;
-  font-size: 2em;
+  font-size: 2.4em;
   color: white;
-  font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
+  animation: color infinite linear;
+  animation-duration: 3.9s;
+  transition: 2.9s;
+}
+@keyframes color {
+  0% {
+    color: #2e57fa;
+  }
+  25% {
+    color: orchid;
+  }
+  50% {
+    color: orangered;
+  }
+  75% {
+    color: gold;
+  }
+  100% {
+    color: plum;
+  }
 }
 .border6 .border6bottom {
   width: 85%;
@@ -923,12 +962,11 @@
   flex-direction: row;
   font-size: 1.2em;
   color: white;
-  font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
 }
 .border6 .border6bottom .box4 {
   width: 23.75%;
-  height: 45%;
+  height: 47%;
   margin: 7px;
   display: flex;
   justify-content: center;
@@ -938,7 +976,7 @@
   font-size: 16px;
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.427);
-  border-bottom-left-radius: 20%;
+  border-radius: 15px;
   transition: 0.8s;
   background-color: rgba(37, 36, 36, 0.3176470588);
 }
@@ -966,12 +1004,13 @@
   align-items: center;
   flex-wrap: nowrap;
   flex-direction: row;
-  font-size: 2.3em;
+  font-size: 2em;
   color: white;
   text-transform: capitalize;
   font-weight: 700;
   text-align: center;
   transition: 0.8s;
+  padding: 10px;
 }
 .border6 .border6bottom .box4 .border6div1:hover {
   color: #4a6cf5;

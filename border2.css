@@ -75,10 +75,33 @@
   color: white;
   padding: 20x;
   text-align: center;
+  animation: coll infinite linear;
+  animation-duration: 3.9s;
+  transition: 2.9s;
+}
+@keyframes coll {
+  0% {
+    color: #2e57fa;
+  }
+  25% {
+    color: orchid;
+  }
+  50% {
+    color: orangered;
+  }
+  75% {
+    color: gold;
+  }
+  100% {
+    color: plum;
+  }
 }
 .border2 .border2top h1 {
   text-align: center;
   padding: 20x;
+  animation: coll infinite linear;
+  animation-duration: 3.9s;
+  transition: 2.9s;
   display: flex;
   justify-content: center;
   align-items: center;

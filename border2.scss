@@ -76,6 +76,7 @@
         // border: 1px solid white;
         margin: 25px;
 
+
         @media(max-width:1000px) {
             width: 90%;
         }
@@ -84,11 +85,40 @@
             @include dis($fontsize: 1.8em);
             padding: 20x;
             text-align: center;
+            animation: coll infinite linear;
+            animation-duration: 3.9s;
+            transition: 2.9s;
+        }
+
+        @keyframes coll {
+            0% {
+                color: #2e57fa;
+            }
+
+            25% {
+                color: orchid;
+            }
+
+            50% {
+                color: orangered;
+            }
+
+            75% {
+                color: gold;
+            }
+
+            100% {
+                color: plum;
+
+            }
         }
 
         h1 {
             text-align: center;
             padding: 20x;
+            animation: coll infinite linear;
+            animation-duration: 3.9s;
+            transition: 2.9s;
             @include dis($fontsize: 5.7em);
 
             @media(max-width:970px) {
@@ -96,6 +126,8 @@
             }
         }
     }
+
+
 
     .border2bottom {
         width: 90%;
