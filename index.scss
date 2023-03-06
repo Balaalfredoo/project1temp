@@ -53,12 +53,22 @@
                 color: gold;
             }
 
-            @media (max-width:996px) {
-                display: none;
 
-            }
+        }
 
+        @media (max-width:996px) {
+            display: none;
 
+        }
+
+    }
+
+    .dd2 {
+        display: none;
+
+        @media (max-width:996px) {
+            @include dis($fontsize: 1.7em);
+            margin-right: 40px;
         }
     }
 }
@@ -387,6 +397,10 @@
                 width: 800px;
             }
 
+            @media(max-width:950px) {
+                width: 600px;
+            }
+
         }
 
         .pic1 {
@@ -677,7 +691,9 @@
     // border: 1px solid blue;
     @include dis($flex: column);
     gap: 10px;
-    background-color: #101010;
+    background-image: url('./src/pexels-arist-creathrive-2307636.jpg');
+    background-position: center;
+    background-size: cover;
     position: relative;
 
     .selectcircle1 {
@@ -747,22 +763,23 @@
         @include dis;
         width: 80%;
         height: 80%;
+
         // border: 1px solid blue;
 
         .border5box {
             width: 85%;
             height: 90%;
-            // border: 1px solid blue;
+            border: 1px solid rgba(0, 0, 0, 0.371);
             // background-image: linear-gradient(rgb(88, 88, 240), rgb(88, 112, 228), rgb(44, 102, 220));
-            background-image: url('./src/pexels-arist-creathrive-2307636.jpg');
-            background-position: center;
-            background-size: cover;
+
+            background-color: #10101051;
             border-bottom-left-radius: 15%;
             @include dis($flex: column, $jus: space-around);
 
 
             @media(max-width:1023px) {
                 width: 95%;
+                height: 70%;
             }
 
             .div1 {
@@ -801,4 +818,11 @@
             }
         }
     }
+}
+
+.border6 {
+    @include dis;
+    height: 100vh;
+    border: 1px solid blue;
+    background-color: #101010;
 }

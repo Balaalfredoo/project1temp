@@ -60,8 +60,23 @@
   color: gold;
 }
 @media (max-width: 996px) {
-  .navbar .bar .dd1 {
+  .navbar .bar {
     display: none;
+  }
+}
+.navbar .dd2 {
+  display: none;
+}
+@media (max-width: 996px) {
+  .navbar .dd2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    font-size: 1.7em;
+    color: white;
+    margin-right: 40px;
   }
 }
 
@@ -439,6 +454,11 @@
     width: 800px;
   }
 }
+@media (max-width: 950px) {
+  .border4 .border4box .picbox {
+    width: 600px;
+  }
+}
 .border4 .border4box .pic1 {
   margin: 15px;
   width: 800px;
@@ -699,7 +719,9 @@
   font-size: 16px;
   color: white;
   gap: 10px;
-  background-color: #101010;
+  background-image: url("./src/pexels-arist-creathrive-2307636.jpg");
+  background-position: center;
+  background-size: cover;
   position: relative;
 }
 .border5 .selectcircle1 {
@@ -772,9 +794,8 @@
 .border5 .border5bottom .border5box {
   width: 85%;
   height: 90%;
-  background-image: url("./src/pexels-arist-creathrive-2307636.jpg");
-  background-position: center;
-  background-size: cover;
+  border: 1px solid rgba(0, 0, 0, 0.371);
+  background-color: rgba(16, 16, 16, 0.3176470588);
   border-bottom-left-radius: 15%;
   display: flex;
   justify-content: space-around;
@@ -787,6 +808,7 @@
 @media (max-width: 1023px) {
   .border5 .border5bottom .border5box {
     width: 95%;
+    height: 70%;
   }
 }
 .border5 .border5bottom .border5box .div1 {
@@ -825,4 +847,17 @@
 }
 .border5 .border5bottom .border5box .div1:nth-child(4) {
   height: 35%;
+}
+
+.border6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  font-size: 16px;
+  color: white;
+  height: 100vh;
+  border: 1px solid blue;
+  background-color: #101010;
 }/*# sourceMappingURL=index.css.map */
