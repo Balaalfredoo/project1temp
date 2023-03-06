@@ -821,8 +821,76 @@
 }
 
 .border6 {
-    @include dis;
+    @include dis($flex: column);
     height: 100vh;
-    border: 1px solid blue;
+    // border: 1px solid blue;
     background-color: #101010;
+
+    .border6top {
+        width: 75%;
+        height: 15%;
+        // border: 1px solid white;
+        @include dis($flex: column, $fontsize: 2em);
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 700;
+    }
+
+    .border6bottom {
+        width: 85%;
+        height: 80%;
+        // border: 1px solid white;
+        @include dis($wrap: wrap, $fontsize: 1.2em, $jus: space-around);
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 700;
+
+        .box4 {
+            width: calc(95%/4);
+            height: 45%;
+            margin: 7px;
+            @include dis($flex: column);
+            border: 1px solid rgba(255, 255, 255, 0.427);
+            border-bottom-left-radius: 20%;
+            transition: 0.8s;
+
+            &:hover {
+
+                .icondiv1,
+                .border6div1 {
+                    color: #4a6cf5;
+                }
+            }
+
+            .icondiv1 {
+                width: 98%;
+                height: 65%;
+                @include dis($fontsize: 4em);
+                transition: 0.8s;
+
+
+            }
+
+            .border6div1 {
+                width: 98%;
+                height: 25%;
+                @include dis($fontsize: 2.3em);
+                text-transform: capitalize;
+                font-weight: 700;
+                text-align: center;
+                transition: 0.8s;
+
+                &:hover {
+                    color: #4a6cf5;
+                }
+
+                @media(max-width: 950px) {
+                    font-size: 1.8em;
+                }
+            }
+
+            @media(max-width:1286px) {
+                width: 45%;
+            }
+        }
+
+    }
 }
