@@ -859,6 +859,46 @@
   color: white;
   height: 100vh;
   background-color: #101010;
+  position: relative;
+}
+.border6 .selectcircle {
+  position: absolute;
+  width: 8px;
+  transform: translate(-50%, -50%);
+  height: 8px;
+  border-radius: 50%;
+  transition: 0.8s;
+  animation: up infinite linear;
+  -webkit-clip-path: path("M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z");
+          clip-path: path("M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z");
+  animation-duration: 3.1s;
+}
+@keyframes up {
+  0% {
+    width: 8px;
+    height: 8px;
+    transform: translateY(-10px);
+  }
+  25% {
+    width: 20px;
+    height: 20px;
+    transform: translateY(-60px);
+  }
+  50% {
+    width: 25px;
+    height: 25px;
+    transform: translateY(-100px);
+  }
+  75% {
+    width: 30px;
+    height: 30px;
+    transform: translateY(-150px);
+  }
+  100% {
+    width: 35px;
+    height: 35px;
+    transform: translateY(-200px);
+  }
 }
 .border6 .border6top {
   width: 75%;
@@ -900,6 +940,7 @@
   border: 1px solid rgba(255, 255, 255, 0.427);
   border-bottom-left-radius: 20%;
   transition: 0.8s;
+  background-color: rgba(37, 36, 36, 0.3176470588);
 }
 .border6 .border6bottom .box4:hover .icondiv1,
 .border6 .border6bottom .box4:hover .border6div1 {
